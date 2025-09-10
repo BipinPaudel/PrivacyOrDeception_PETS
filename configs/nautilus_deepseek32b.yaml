@@ -1,0 +1,32 @@
+output_dir: "results/results_acs"
+seed: 10
+task: "SYNTHETIC"
+dryrun: False
+save_prompts: False
+store: True
+timeout: 0.0
+task_config: 
+    path: "data/preprocess/"
+    outer_prompt:
+        num_answers: 1
+        cot: False
+    state: "NY"
+    given_attrs: ["PUMA", "MAR", "OCCP", "CIT", "SEX"]
+    target: "PINCP"
+    total_queries: 10000
+    creativity: 0.0
+    complexity: 0.0
+gen_model: 
+  name: "deepseek32b"
+  provider: "nautilus"
+  args: {
+    # 'api_key': 'sk-R4u2uS_JL8ez4ctC2VOerQ',
+    # 'base_url': 'https://llm.nrp-nautilus.io/v1',
+    # 'model_name': 'DeepSeek-R1-Distill-Qwen-32B'
+    'api_key': 'EMPTY',
+    'base_url': 'http://localhost:8000/v1',
+    'model_name': 'deepseek-ai/DeepSeek-R1-Distill-Qwen-32B'
+  }
+
+# old 'sk-ZRIdnCoJnOmWkcHp_PxK7g'
+  # sk-R4u2uS_JL8ez4ctC2VOerQ
