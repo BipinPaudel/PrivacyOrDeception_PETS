@@ -45,7 +45,8 @@ The artifact is publicly available at:
 ### Software Requirements
 - Tested on **Ubuntu 22.04** and **macOS 15.3.1**.  
 - Python **3.10+** required.  
-- All other dependencies are listed in `requirements.txt`.  
+- All other dependencies are listed in `requirements.txt`.
+- To run LLM models, you’ll need to provide an API key for the corresponding model. For example, you can add it to the `configs/priv_gpt3.5.yaml` file under the api_key field. Without this key, any experiments that rely on an LLM won’t run.
 
 To set up:
 
